@@ -19,7 +19,7 @@ public:
 
     void call(PyObject* arg)
     {
-        PyObject_CallFunctionObjArgs(m_fn, arg);
+        PyObject_CallFunctionObjArgs(m_fn, arg, NULL); // DON'T FORGET THE NULL!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     }
 
 private:
